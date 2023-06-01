@@ -4,7 +4,7 @@ import os
 from langchain.prompts import PromptTemplate
 import re
 
-os.environ["OPENAI_API_KEY"] = "**************************************"
+openai.api_key = os.getenv('OPENAI_API_KEY')
 llm = OpenAI(temperature=0.9)
 
 
